@@ -16,14 +16,14 @@ html {
 }
 
 body {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1;
   font-family: "Josefin Sans", sans-serif;
 }
 
 .container {
   margin: 0 auto;
-  max-width: 160rem;
+  max-width: 80%;
 }
 
 .primary-heading {
@@ -34,6 +34,14 @@ body {
   padding: 5rem;
   border: 1px solid var(--white);
   display: inline-block;
+}
+
+.secondary-heading {
+  font-size: 7rem;
+  text-transform: uppercase;
+  font-weight: 300;
+  display: inline-block;
+  margin-bottom: 2rem;
 }
 
 .header {
@@ -84,5 +92,40 @@ body {
     &:active::after {
       transform: scaleX(1);
     }
+  }
+}
+
+//SECTION LEADER
+
+.section-leader {
+  margin: 14rem 0;
+}
+
+.leader {
+  position: relative;
+  &__img {
+    z-index: -1;
+    width: 60%;
+
+    img {
+      width: 100%;
+
+      object-fit: cover;
+    }
+  }
+
+  &__desc {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    padding: 10rem 0 0 10rem;
+    background-color: var(--white);
+  }
+
+  &__description {
+    color: var(--darkgray);
+    line-height: 1.6;
+    font-size: 1.8rem;
   }
 }
