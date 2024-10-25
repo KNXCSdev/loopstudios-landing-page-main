@@ -65,7 +65,7 @@ body {
   justify-content: space-between;
   color: var(--white);
   margin-bottom: 20rem;
-  padding-top: 2rem;
+  padding-top: 6rem;
 }
 .nav__list {
   list-style: none;
@@ -148,6 +148,7 @@ body {
   align-items: flex-end;
   cursor: pointer;
   overflow: hidden;
+  transition: all 0.3s;
 }
 .creations__block:hover {
   color: var(--black);
@@ -164,8 +165,8 @@ body {
   height: 100%;
   background-size: cover;
   background-position: top;
-  transition: opacity 0.3s;
-  z-index: -1; /* Ensures the background is behind the text */
+  transition: all 0.3s;
+  z-index: -1;
 }
 .creations__block--1::before {
   background-image: url(/images/desktop/image-deep-earth.jpg);
@@ -203,4 +204,28 @@ body {
 .btn:hover {
   background-color: var(--black);
   color: var(--white);
+}
+
+.footer {
+  padding: 4rem 0;
+  background-color: var(--black);
+}
+.footer__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.footer__icons {
+  display: flex;
+  gap: 2rem;
+}
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+}
+.footer__description {
+  color: var(--verydarkgray);
 }
