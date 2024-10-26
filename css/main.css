@@ -16,6 +16,7 @@ html {
 }
 
 body {
+  position: relative;
   font-size: 1.6rem;
   line-height: 1;
   font-family: "Josefin Sans", sans-serif;
@@ -57,6 +58,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  position: relative;
 }
 
 .nav {
@@ -136,7 +138,7 @@ body {
 .creations__container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 45rem 45rem;
+  grid-auto-rows: 45rem;
   gap: 3rem;
 }
 .creations__block {
@@ -323,5 +325,62 @@ body {
   }
   .leader__img {
     width: 100%;
+  }
+  .creations__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+  }
+}
+@media only screen and (max-width: 35em) {
+  .nav {
+    position: relative;
+    display: none;
+  }
+  .nav__mobile {
+    width: 90%;
+    position: fixed;
+    padding: 4rem 0 4rem 0;
+    z-index: 222;
+  }
+  .nav__mobile__buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20rem;
+  }
+  .nav__mobile__btn {
+    border: none;
+    background: transparent;
+    color: var(--white);
+    cursor: pointer;
+  }
+  .nav__mobile__btn ion-icon {
+    width: 4.8rem;
+    height: 4.8rem;
+  }
+  .nav__mobile__hidden {
+    display: none;
+  }
+  .nav__mobile__list {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    color: var(--white);
+    font-size: 5rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    gap: 5rem;
+  }
+  .bg {
+    position: absolute;
+    top: 0;
+    background-color: var(--black);
+    height: 100%;
+    width: 100%;
+    z-index: 1;
   }
 }
