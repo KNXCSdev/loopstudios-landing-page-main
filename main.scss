@@ -286,6 +286,9 @@ body {
   .leader__description {
     font-size: 1.8rem;
   }
+  .nav__btn {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 80em) {
@@ -400,9 +403,12 @@ body {
 @media only screen and (max-width: 35em) {
   .nav {
     position: relative;
-    display: none;
+    display: block;
   }
-  .nav__mobile {
+  .primary-heading {
+    margin-top: 20rem;
+  }
+  .nav {
     width: 90%;
     position: fixed;
     padding: 4rem 0 4rem 0;
@@ -416,6 +422,7 @@ body {
     }
 
     &__btn {
+      display: block;
       border: none;
       background: transparent;
       color: var(--white);
@@ -424,10 +431,6 @@ body {
         width: 4.8rem;
         height: 4.8rem;
       }
-    }
-
-    &__hidden {
-      display: none;
     }
 
     &__list {
@@ -439,6 +442,9 @@ body {
       font-weight: 300;
       text-transform: uppercase;
       gap: 5rem;
+    }
+    &__hidden {
+      display: none;
     }
   }
 
