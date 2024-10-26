@@ -200,6 +200,7 @@ body {
   background-color: var(--white);
   border: 1px solid var(--black);
   cursor: pointer;
+  transition: all 0.3s;
 }
 .btn:hover {
   background-color: var(--black);
@@ -228,4 +229,99 @@ body {
 }
 .footer__description {
   color: var(--verydarkgray);
+}
+
+@media only screen and (max-width: 99em) {
+  html {
+    font-size: 60%;
+  }
+  .secondary-heading {
+    font-size: 5.4rem;
+  }
+  .leader__desc {
+    width: 50%;
+    padding: 7rem 0 0 7rem;
+  }
+  .leader__description {
+    font-size: 1.8rem;
+  }
+}
+@media only screen and (max-width: 80em) {
+  html {
+    font-size: 55%;
+  }
+  .tertiary-heading {
+    font-size: 3.2rem;
+  }
+  .secondary-heading {
+    font-size: 4.8rem;
+  }
+  .leader__description {
+    font-size: 1.6rem;
+  }
+  .creations__block {
+    padding: 2rem;
+  }
+}
+@media only screen and (max-width: 70em) {
+  html {
+    font-size: 50%;
+  }
+  .primary-heading {
+    font-size: 5.8rem;
+  }
+  .nav {
+    margin-bottom: 10rem;
+  }
+  .leader__desc {
+    width: 60%;
+    padding: 5rem 0 0 5rem;
+  }
+  .header {
+    height: 60vh;
+  }
+}
+@media only screen and (max-width: 60em) {
+  html {
+    font-size: 50%;
+  }
+  .primary-heading {
+    font-size: 5rem;
+  }
+  .secondary-heading {
+    font-size: 4rem;
+  }
+  .tertiary-heading {
+    font-size: 3rem;
+  }
+  .leader__desc {
+    padding: 3rem 0 0 3rem;
+  }
+  .leader__description {
+    font-size: 1.5rem;
+  }
+  .container {
+    max-width: 90%;
+  }
+  .nav {
+    padding-top: 3rem;
+  }
+}
+@media only screen and (max-width: 45em) {
+  html {
+    font-size: 50%;
+  }
+  .section-leader {
+    margin: 10rem 0;
+  }
+  .leader__desc {
+    position: static;
+    text-align: center;
+    width: 100%;
+    padding: 2rem 3rem 3rem 3rem;
+    background-color: var(--white);
+  }
+  .leader__img {
+    width: 100%;
+  }
 }
