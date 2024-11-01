@@ -421,6 +421,12 @@ body {
 }
 
 @media only screen and (max-width: 35em) {
+  .header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.308), rgba(0, 0, 0, 0.445)),
+      url(/images/mobile/image-hero.jpg);
+    background-size: cover;
+    background-position: top;
+  }
   .primary-heading {
     margin-top: 20rem;
   }
@@ -476,32 +482,8 @@ body {
     width: 100%;
     z-index: 1;
   }
-}
-
-@media only screen and (max-width: 25em) {
-  html {
-    font-size: 45%;
-  }
-  .creations__container {
-    grid-template-columns: 1fr;
-    grid-auto-rows: auto;
-    text-align: center;
-  }
-
-  .section-creations {
-    text-align: center;
-  }
-
-  .creations__header {
-    display: block;
-
-    .btn {
-      display: none;
-    }
-  }
 
   .creations__block {
-    height: 20vh;
     background-size: cover;
     &--1::before {
       background-image: url(/images/mobile/image-deep-earth.jpg);
@@ -527,6 +509,32 @@ body {
     &--8::before {
       background-image: url(/images/mobile/image-fisheye.jpg);
     }
+  }
+}
+
+@media only screen and (max-width: 25em) {
+  html {
+    font-size: 45%;
+  }
+  .creations__container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    text-align: center;
+  }
+
+  .section-creations {
+    text-align: center;
+  }
+
+  .creations__header {
+    display: block;
+
+    .btn {
+      display: none;
+    }
+  }
+  .creations__block {
+    height: 20vh;
   }
   .footer__logo {
     flex-direction: column;
